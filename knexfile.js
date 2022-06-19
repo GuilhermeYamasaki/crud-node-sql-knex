@@ -6,10 +6,10 @@
 module.exports = {
 
   development: {
-    client: 'pg',
+    client: 'mysql',
     connection: {
-      database: "knex_teste",
-      user: "postgres",
+      database: "mysql_teste",
+      user: "root",
       password: "0000"
     },
     migrations: {
