@@ -4,6 +4,7 @@ const knex = require('../database')
 module.exports = {
     async index(req, res) { //select
         const results = await knex('users')
+        .where('deleted_at', null) //vai trazer usuarios cujo delete_at == null
         return res.json(results)
     },
 
@@ -32,7 +33,7 @@ module.exports = {
     async delete(req, res, next) { //delete
         try {
             const {id} = req.params
-            await knex('users').delete().where({id})
+            await knex('users').where({ id }).update('deleted_at', new Date()) //soft-delete
             return res.status(200).send()
         } catch (error) {
             next (error)
