@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GuilhermeYamasaki/knex.git"
+    "url": "git+https://github.com/GuilhermeYamasaki/crud-node-sql-knex.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GuilhermeYamasaki/knex/issues"
+    "url": "https://github.com/GuilhermeYamasaki/crud-node-sql-knex/issues"
   },
-  "homepage": "https://github.com/GuilhermeYamasaki/knex#readme",
+  "homepage": "https://github.com/GuilhermeYamasaki/crud-node-sql-knex#readme",
   "devDependencies": {
     "nodemon": "^2.0.16"
   },
