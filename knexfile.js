@@ -20,6 +20,11 @@ module.exports = {
       directory:`${__dirname}/src/database/seed`
     }
   },
+  onUpdateTrigger: table => `
+  create trigger ${table}_updated_at
+  before update on ${table}
+  for each row
+  execute procedure on_update_timestamp()`
 
 
 };
